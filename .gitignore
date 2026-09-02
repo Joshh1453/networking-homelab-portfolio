@@ -1,1 +1,17 @@
 .DS_Store
+
+# Secrets and VPN material
+*.key
+*.pem
+*.p12
+*.pfx
+*.ovpn
+*.conf
+.env
+.env.*
+secrets/
+private/
+
+# Local diagnostic output
+*.log
+*.log.db
