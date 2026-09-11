@@ -65,6 +65,7 @@ flowchart TD
 | Case study | What it demonstrates |
 |---|---|
 | [Proxmox management outage](case-studies/proxmox-management-outage.md) | Routing, firewall behavior, layered diagnosis, and recovery validation |
+| [Corosync single-link dependency on a legacy network](case-studies/corosync-dual-link-migration.md) | Redundant link design, firewall policy gaps, phased migration, and zero-downtime verification |
 | [BPDU Guard on an AP trunk](case-studies/bpduguard-ap-trunk-outage.md) | Cisco switching protections, trunk design, and error-disabled interface recovery |
 | [DHCP service port conflict](case-studies/dhcp-port-conflict.md) | Socket ownership, service migration, DHCP validation, and root-cause analysis |
 | [ISP router to firewall cutover](case-studies/isp-firewall-cutover.md) | Edge-network migration planning, execution, validation, and rollback awareness |
