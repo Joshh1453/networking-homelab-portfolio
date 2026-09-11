@@ -81,7 +81,7 @@ flowchart TD
 
 ## Technology used
 
-OPNsense · Cisco IOS switching · TP-Link Omada · Proxmox VE · Debian/Ubuntu/Alpine Linux · WireGuard · Docker/Portainer · Uptime Kuma · rclone · Git/GitHub
+OPNsense · Cisco IOS switching · TP-Link Omada · Proxmox VE · Debian/Ubuntu/Alpine Linux · WireGuard · Docker/Portainer · Uptime Kuma · NUT (Network UPS Tools) · Prometheus/Grafana · rclone · Git/GitHub
 
 ## Operating principles
 
