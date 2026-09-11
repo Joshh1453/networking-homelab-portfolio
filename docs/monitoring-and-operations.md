@@ -13,6 +13,7 @@ I use monitoring and operational checks to detect service failures, validate inf
 | Internet performance | Scheduled speed tests and historical results | Identifies provider degradation and trends |
 | Notifications | Service-state alerts | Reduces the time between an outage and awareness |
 | Traffic visibility | Local flow monitoring and firewall logs | Supports troubleshooting and policy validation |
+| Power and UPS health | Battery charge, estimated runtime, load, voltage, and tiered automatic shutdown sequencing | Confirms battery backup behavior under real load and protects hosts from unclean shutdowns |
 
 ## Operational practices
 
