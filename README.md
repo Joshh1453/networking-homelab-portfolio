@@ -31,7 +31,7 @@ flowchart TD
 - OPNsense-based routing and firewall policy with inter-VLAN access controls
 - Cisco switching and TP-Link Omada wireless with VLAN-aware access and trunk links
 - A two-node Proxmox VE environment hosting Linux containers, virtual machines, and administrative services
-- WireGuard-based remote administration with no direct public exposure for management applications
+- Tailscale-based remote administration with firewall-controlled access to approved private resources and no direct public exposure for management applications
 - Monitoring, documented runbooks, local backups, encrypted off-site copies, and recovery procedures
 
 ## Technical focus
@@ -39,7 +39,7 @@ flowchart TD
 | Area | Skills demonstrated |
 |---|---|
 | Network engineering | VLAN segmentation, switch trunks and access ports, SSID-to-VLAN mapping, DHCP/DNS validation, and inter-VLAN routing |
-| Security | OPNsense firewall policy, least-privilege design, IoT and guest isolation, WireGuard remote access, and management-plane protection |
+| Security | OPNsense firewall policy, least-privilege design, IoT and guest isolation, Tailscale remote access, WireGuard migration experience, and management-plane protection |
 | Systems administration | Proxmox VE, Linux LXC and VM workloads, Docker/Portainer, service lifecycle management, and persistent-data awareness |
 | Reliability | Health checks, alerts, traffic visibility, backup retention, encrypted off-site copies, restoration planning, and incident documentation |
 | Troubleshooting | Layered diagnosis across switching, routing, firewall policy, DHCP, virtualization, and application dependencies |
@@ -54,7 +54,7 @@ flowchart TD
 | [Network segmentation](docs/network-segmentation.md) | VLANs, trust boundaries, and intended access between device classes |
 | [Firewall policy](docs/firewall-policy.md) | Least-privilege design and inter-zone traffic control |
 | [Wireless deployment](docs/wireless-deployment.md) | VLAN-aware AP uplinks, wireless trust zones, and validation procedures |
-| [Secure remote access](docs/secure-remote-access.md) | WireGuard-based administration without exposing management interfaces publicly |
+| [Secure remote access](docs/secure-remote-access.md) | Tailscale-based administration with firewall-controlled access and no direct public exposure for management interfaces |
 | [Virtualization platform](docs/virtualization-platform.md) | Proxmox VE, Linux workloads, service placement, and resilience planning |
 | [Monitoring and operations](docs/monitoring-and-operations.md) | Availability checks, alerting, traffic visibility, and operational validation |
 | [Service platform](docs/service-platform.md) | Workload lifecycle, service placement, and operational ownership |
@@ -67,6 +67,8 @@ flowchart TD
 | [Proxmox management outage](case-studies/proxmox-management-outage.md) | Routing, firewall behavior, layered diagnosis, and recovery validation |
 | [Corosync single-link dependency on a legacy network](case-studies/corosync-dual-link-migration.md) | Redundant link design, firewall policy gaps, phased migration, and zero-downtime verification |
 | [Validating UPS failover under a real outage test](case-studies/ups-monitoring-validation.md) | Power monitoring instrumentation, tiered shutdown automation, controlled failure testing, and evidence-based capacity planning |
+| [Building RDM-managed WireGuard remote access](case-studies/rdm-managed-wireguard.md) | Legacy WireGuard/RDM workflow design, split-tunnel routing, and layered VPN validation |
+| [Tailscale remote-access migration](case-studies/tailscale-remote-access-migration.md) | Identity-based remote access, firewall subnet routing, staged migration, and resilient host management |
 | [BPDU Guard on an AP trunk](case-studies/bpduguard-ap-trunk-outage.md) | Cisco switching protections, trunk design, and error-disabled interface recovery |
 | [DHCP service port conflict](case-studies/dhcp-port-conflict.md) | Socket ownership, service migration, DHCP validation, and root-cause analysis |
 | [ISP router to firewall cutover](case-studies/isp-firewall-cutover.md) | Edge-network migration planning, execution, validation, and rollback awareness |
@@ -81,7 +83,7 @@ flowchart TD
 
 ## Technology used
 
-OPNsense · Cisco IOS switching · TP-Link Omada · Proxmox VE · Debian/Ubuntu/Alpine Linux · WireGuard · Docker/Portainer · Uptime Kuma · NUT (Network UPS Tools) · Prometheus/Grafana · rclone · Git/GitHub
+OPNsense · Cisco IOS switching · TP-Link Omada · Proxmox VE · Debian/Ubuntu/Alpine Linux · Tailscale · WireGuard · Docker/Portainer · Uptime Kuma · NUT (Network UPS Tools) · Prometheus/Grafana · rclone · Git/GitHub
 
 ## Operating principles
 

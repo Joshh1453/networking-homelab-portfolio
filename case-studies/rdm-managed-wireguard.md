@@ -1,3 +1,5 @@
+> **Historical status:** This case study documents a previous WireGuard/RDM implementation that I built and validated. The active remote-access design now uses Tailscale; the former WireGuard implementation is retained in a disabled contingency state as part of the migration and recovery record. See [Secure Remote Access](../docs/secure-remote-access.md) and [Tailscale remote-access migration](tailscale-remote-access-migration.md).
+
 # Building RDM-Managed WireGuard Remote Access
 
 ## Overview
